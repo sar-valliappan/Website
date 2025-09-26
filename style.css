@@ -69,19 +69,6 @@ header {
 .hero span {
   color: #ffe082;
 }
-.hero button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background: #fff;
-  color: var(--title-color);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.hero button:hover {
-  background: #eee;
-}
 
 .content-section {
   padding: 80px 20px;
