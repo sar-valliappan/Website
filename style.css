@@ -2,6 +2,7 @@
     --navbar-background: #0004ff;
     --navbar-text-color: #ffe082;
     --navbar-hover-color: #00bcd4;
+    --title-color: #2196f3;
 }
 
 body, h1, h2, p, ul {
@@ -72,7 +73,7 @@ header {
   padding: 10px 20px;
   margin-top: 20px;
   background: #fff;
-  color: #2196f3;
+  color: var(--title-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -80,4 +81,42 @@ header {
 }
 .hero button:hover {
   background: #eee;
+}
+
+.content-section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--title-color);
+}
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills-list li {
+  background: var(--title-color);
+  color: #fff;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3, .project-card p {
+  margin-top: 0;
 }
