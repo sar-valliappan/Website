@@ -1,3 +1,9 @@
+:root {
+    --navbar-background: #0004ff;
+    --navbar-text-color: #fff700;
+    --navbar-hover-color: #00bcd4;
+}
+
 body, h1, h2, p, ul {
   margin: 0;
   padding: 0;
@@ -8,4 +14,39 @@ body {
   background: #f4f4f4;
   color: #333;
   line-height: 1.6;
+}
+
+header {
+  background: var(--navbar-background);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.navbar {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar .logo {
+  color: var(--navbar-text-color);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  color: var(--navbar-text-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: var(--navbar-hover-color);
 }
