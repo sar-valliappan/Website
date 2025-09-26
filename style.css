@@ -1,6 +1,6 @@
 :root {
     --navbar-background: #0004ff;
-    --navbar-text-color: #fff700;
+    --navbar-text-color: #ffe082;
     --navbar-hover-color: #00bcd4;
 }
 
@@ -49,4 +49,35 @@ header {
 }
 .nav-links a:hover {
   color: var(--navbar-hover-color);
+}
+
+.hero {
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hero span {
+  color: #ffe082;
+}
+.hero button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #fff;
+  color: #2196f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.hero button:hover {
+  background: #eee;
 }
